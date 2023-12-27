@@ -1,6 +1,10 @@
 # from https://github.com/sinisterstuf Ebitengine Game Jam template
 name: Build Executables
-on: [push]
+on: 
+  push:
+    branches:
+      - '*'
+  workflow_dispatch:
 jobs:
 
   tests:
